@@ -1,70 +1,70 @@
-<body>
-	<header>
-		<div>
-			<div>
-				<a href="./"><img src="logo.png" /></a>
-			</div>
-			<div>
-				<a class="button_small" onclick="document.getElementById('file').click()">UPLOAD A MOVIE</a>
-				<div class="char_dropdown button_small">
-					<div>CREATE A CHARACTER</div>
-					<menu>
-						<a href="/cc?themeId=family&bs=adam">Adam</a>
-						<a href="/cc?themeId=family&bs=eve">Eve</a>
-						<a href="/cc?themeId=family&bs=bob">Bob</a>
-						<a href="/cc?themeId=family&bs=rocky">Rocky</a>
-						<div></div>
-						<a href="/cc?themeId=business&bs=default">Business</a>
-						<a href="/cc?themeId=business&bs=heavy">Heavy</a>
-						<a href="/cc?themeId=business&bs=kid">Kid</a>
-						<div></div>
-						<a href="/cc?themeId=whiteboard&bs=default">Whiteboard</a>
-						<a href="/cc?themeId=whiteboard&bs=kid">Whiteboard (Kid)</a>
-						<div></div>
-						<a href="/cc?themeId=anime&bs=guy">Guy (Anime)</a>
-						<a href="/cc?themeId=anime&bs=girl">Girl (Anime)</a>
-						<div></div>
-						<a href="/cc?themeId=ninjaanime&bs=guy">Guy (Ninja Anime)</a>
-						<a href="/cc?themeId=ninjaanime&bs=girl">Girl (Ninja Anime)</a>
-						<div></div>
-						<a href="/cc?themeId=cc2&bs=default">Lil Peepz</a>
-						<div></div>
-						<a href="/cc?themeId=chibi&bs=default">Chibi Peepz</a>
-						<div></div>
-						<a href="/cc?themeId=ninja&bs=default">Chibi Ninjas</a>
-						<div></div>
+<cuerpo>
+<encabezado>
+<div>
+<div>
+<a href="./"><img src="logotipo.png" /></a>
+</div>
+<div>
+<a class="button_small" onclick="document.getElementById('file').click()">CARGAR UNA PELÍCULA</a>
+<div class="char_dropdown button_small">
+<div>CREAR UN PERSONAJE</div>
+<menú>
+<a href="/cc?themeId=familia&bs=adam">Adán</a>
+<a href="/cc?themeId=family&bs=eve">Eva</a>
+<a href="/cc?themeId=familia&bs=bob">Bob</a>
+<a href="/cc?themeId=family&bs=rocky">Rocoso</a>
+<div></div>
+<a href="/cc?themeId=negocio&bs=default">Negocio</a>
+<a href="/cc?themeId=negocio&bs=pesado">Pesado</a>
+<a href="/cc?themeId=negocio&bs=niño">Niño</a>
+<div></div>
+<a href="/cc?themeId=pizarra&bs=predeterminada">Pizarra</a>
+<a href="/cc?themeId=pizarra&bs=niño">Pizarra (niño)</a>
+<div></div>
+<a href="/cc?themeId=anime&bs=guy">Chico (Anime)</a>
+<a href="/cc?themeId=anime&bs=girl">Chica (Anime)</a>
+<div></div>
+<a href="/cc?themeId=ninjaanime&bs=guy">Guy (anime ninja)</a>
+<a href="/cc?themeId=ninjaanime&bs=girl">Chica (Anime Ninja)</a>
+<div></div>
+<a href="/cc?themeId=cc2&bs=default">Lil Peepz</a>
+<div></div>
+<a href="/cc?themeId=chibi&bs=default">Chibi Peepz</a>
+<div></div>
+<a href="/cc?themeId=ninja&bs=default">Ninjas Chibi</a>
+<div></div>
 
-					</menu>
-				</div>
-				<a href="/go_full" class="button_big">MAKE A VIDEO</a>
-				<a href="https://wrappershop.ga" class="button_big">SHOP FOR MODS</a>
-			</div>
-		</div>
-		<div class="warning">
-			This is Original Legacy Video Maker from Popular GoAnifire
-			GoAniRainbow is Progress<br>
-				
-		</div>
-	</header>
-	<table>
-		<thead>
-			<tr>
-				<td></td>
-				<td>Video Title</td>
-				<td>Last Modified</td>
-				<td></td>
-			</tr>
-		</thead>
-		<tbody></tbody>
-		<tfoot>
-			<tr>
-				<td colspan="127"><a id="load_more" href="javascript:;">LOAD MORE...</a></td>
-			</tr>
-		</tfoot>
-	</table>
-	<form enctype='multipart/form-data' action='/upload_movie' method='post'>
-		<input id='file' type="file" onchange="this.form.submit()" name='import' />
-	</form>
+</menú>
+</div>
+<a href="/go_full" class="button_big">PRODUCIR UN VÍDEO</a>
+<a href="https://wrappershop.ga" class="button_big">COMPRAR MODS</a>
+</div>
+</div>
+<div clase="advertencia">
+Este es Original Legacy Video Maker de Popular GoAnifire
+GoAniRainbow es progreso<br>
+
+</div>
+</encabezado>
+<tabla>
+<cabeza>
+<tr>
+<td></td>
+<td>Título del vídeo</td>
+<td>Última modificación</td>
+<td></td>
+</tr>
+</thead>
+<tcuerpo></tcuerpo>
+<pie>
+<tr>
+<td colspan="127"><a id="cargar_más" href="javascript:;">CARGAR MÁS...</a></td>
+</tr>
+</tfoot>
+</tabla>
+<form enctype='multipart/form-data' action='/upload_movie' method='post'>
+<input id='file' type="file" onchange="this.form.submit()" name='import' />
+</formulario>
 	<script>
 		const closeReq = new XMLHttpRequest();
 		closeReq.open('GET', '/events/close');
